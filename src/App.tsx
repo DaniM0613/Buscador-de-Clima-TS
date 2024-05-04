@@ -1,14 +1,18 @@
-
+import styles from'./App.module.css'
+import Form from './form/Form'
 
 function App() {
   
 
   return (
-    
-      <div>
-        Buscador de clima
+    <> 
+      <h1 className={styles.title}>Buscador de clima</h1>
+       <div className={styles.container}>
+          <Form/>
+          <p>2</p> 
+        
        </div>
-    
+       </>
   )
 }
 
