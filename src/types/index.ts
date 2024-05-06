@@ -2,5 +2,10 @@
 
 export type SearchType = {
     city: string
-    counry: string
+    country: string
+}
+
+export type Country = {
+    code: string
+    name: string
 }
