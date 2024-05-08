@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    color: var(--white);
+    
 }
 .form input[type='text'],
 .form select {
