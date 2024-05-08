@@ -12,6 +12,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: var(--black);
+    color: var(--white);
     font-size: 4rem;
 }
