@@ -1,10 +1,13 @@
 import styles from'./App.module.css'
 import Form from './components/Form/Form'
 import useWeather from './hooks/useWeather'
+import WeatherDeatail from './components/WeatherDetails/WeatherDeatail'
+import Sipnner from './components/Spiner/Spiner'
+import Alert from './components/Alert/Alert'
 
 function App() {
   
-  const  {fetchWeather}  = useWeather()
+  const  {fetchWeather, weather, hasWeatherData, loading, notFound}  = useWeather()
 
   return (
     <> 
@@ -13,8 +16,9 @@ function App() {
           <Form
             fetchWeather={fetchWeather}
           />
-          <p>2</p> 
-        
+          {loading && <Sipnner/>}
+          {hasWeatherData && <WeatherDeatail weather={weather}/>}
+          {notFound && <Alert>Ciudad No Encontrada</Alert>}
        </div>
        </>
   )
